@@ -20,7 +20,7 @@ const Carrousel = ({ genre = '', studio = '', limit = 0 , items = ""}) => {
 
     const fetchMoviesData = async () => {
         try {
-            const response = await axios.get('http://localhost:3001/movies');
+            const response = await axios.get('http://localhost:8080/movies');
             let data = response.data;
 
             if (!genre && !studio) {
